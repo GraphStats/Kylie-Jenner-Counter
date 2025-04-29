@@ -121,7 +121,7 @@
                 subscriberChart.data.datasets[0].data.push(newCount);
 
                 // Limiter à 30 points max pour éviter que ça devienne trop lourd
-                if (subscriberChart.data.labels.length > 30) {
+                if (subscriberChart.data.labels.length > 10000) {
                     subscriberChart.data.labels.shift();
                     subscriberChart.data.datasets[0].data.shift();
                 }
